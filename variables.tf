@@ -36,3 +36,13 @@ variable "admin_password" {
   description = "Windows VM admin password (12+ chars). keep out of Github"
   sensitive   = true
 }
+variable "db_admin_username" {
+  type        = string
+  description = "SQL admin username"
+  default     = "sqladminuser"
+}
+variable "db_admin_password" {
+  type        = string
+  description = "SQL admin password"
+  sensitive   = true
+}

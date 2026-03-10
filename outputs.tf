@@ -11,3 +11,9 @@ output "web_vm_public_ip" {
 output "lb_public_ip" {
   value = azurerm_public_ip.lb_pip.ip_address
 }
+output "sql_server_fqdn" {
+  value = azurerm_mssql_server.sql_server.fully_qualified_domain_name
+}
+output "sql_db_name" {
+  value = azurerm_mssql_database.sql_db.name
+}
